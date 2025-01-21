@@ -1,0 +1,324 @@
+import React from "react";
+import { Navbar } from "./components/Navbar";
+import { MarqueeLogistic } from "./helpers/MarqueeLogistic";
+import { Destacados } from "./components/Destacados";
+
+export const App = () => {
+  return (
+    <div>
+      {/* MENU */}
+      <nav>
+        <Navbar />
+      </nav>
+
+      {/* HERO */}
+      <header className="bg-black text-white mt-10">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-12 px-6">
+          {/* Sección de Texto */}
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              Accesorios <span className="text-yellow-500">Premium</span> para
+              tu <span className="text-gray-400">iPhone</span>
+            </h1>
+            <p className="text-md mb-6">
+              Diseñados para proteger y mejorar tu experiencia. ¡Explora nuestra
+              colección hoy!
+            </p>
+            <a
+              href="#Productos"
+              className="flex items-center justify-center mx-auto bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-400 hover:scale-105 transition duration-500"
+              style={{ maxWidth: "fit-content" }}
+            >
+              <span>Explorar productos</span>
+              <img
+                src="src/assets/icons/hero/bx-right-arrow-circle.svg"
+                alt="Flecha"
+                className="ml-2 w-4 h-4"
+              />
+            </a>
+            <p className="text-center text-xs text-gray-400 mt-4">
+              Envío gratis en compras mayores a $50.000
+            </p>
+          </div>
+          {/* Sección de Imagen */}
+          <div>
+            <img
+              src="src/img/hero.jpg"
+              alt="Accesorios para iPhone"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </header>
+
+      {/* LOGISTIC */}
+      <section className="bg-yellow-400">
+        <marquee
+          loop={0}
+          speed={20} // Reduce la velocidad para suavidad
+          gradient={false} // Elimina el gradiente
+          easing="ease-in-out" // Animación más fluida
+          pauseOnHover={true} // Pausa al pasar el mouse
+        >
+          <MarqueeLogistic />
+        </marquee>
+      </section>
+
+      {/* DESTACADOS */}
+      <section id="Destacados" className="py-10 md:py-20 bg-destacados ">
+        <Destacados />
+      </section>
+
+      {/* EXPLORAR */}
+      <section id="Productos" className="py-10 md:py-20 bg-gray-100">
+        <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
+          <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
+            {/* Auriculares */}
+            <div
+              className="col-span-2 md:col-span-1 md:row-span-3 bg-cover bg-center rounded-lg flex items-center justify-center h-[300px] sm:h-full hover:scale-105 transition duration-500"
+              style={{
+                backgroundImage: "url('src/img/category/Auriculares.jpg')",
+              }}
+            >
+              <p className="text-white text-xl sm:text-4xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                Auriculares
+              </p>
+            </div>
+
+            {/* Accesorios */}
+            <div
+              className="col-span-2 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center md:h-38 hover:scale-105 transition duration-500"
+              style={{
+                backgroundImage: "url('src/img/category/Accesorio1.jpg')",
+              }}
+            >
+              <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
+                Accesorios
+              </p>
+            </div>
+
+            {/* Cables */}
+            <div
+              className="col-span-4 row-span-1 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center md:h-36 hover:scale-105 transition duration-500"
+              style={{
+                backgroundImage: "url('src/img/category/Cable2.jpg')",
+              }}
+            >
+              <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                Cables
+              </p>
+            </div>
+
+            {/* Cases */}
+            <div
+              className="col-span-4 row-span-1 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center h-46 hover:scale-105 transition duration-500"
+              style={{
+                backgroundImage: "url('src/img/category/Case2.jpg')",
+              }}
+            >
+              <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
+                Cases
+              </p>
+            </div>
+
+            {/* Cargadores */}
+            <div
+              className="col-span-4 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center h-40 md:h-36 hover:scale-105 transition duration-500"
+              style={{
+                backgroundImage: "url('src/img/category/Charger4.jpg')",
+              }}
+            >
+              <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                Cargadores
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SAVE OFF */}
+      <section id="Ofertas" className="bg-gray-300">
+        <div className="container mx-auto text-center px-4 py-10 mt-8">
+          <h2 className="text-3xl font-bold mb-4">Ofertas Exclusivas</h2>
+          <p className="text-lg mb-6">
+            Aprovecha nuestras promociones limitadas y consigue los mejores
+            precios.
+          </p>
+          <button className="bg-black text-white font-semibold px-7 py-3 rounded-lg shadow hover:bg-yellow-400 hover:text-black transition duration-500">
+            <a href="#productos">
+              <img
+                src="src/assets/icons/cards/eye.svg"
+                alt=""
+                className="filter invert"
+              />
+            </a>
+          </button>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-2 font-mono">
+        <div className="container mx-auto px-4">
+          {/* Redes Sociales y Seguinos */}
+          <div className="flex flex-wrap justify-end items-center gap-3 py-2">
+            <p className="text-[0.8rem] font-semibold text-gray-400 hidden md:inline">
+              Seguinos en nuestras redes:
+            </p>
+            <a href="#" aria-label="Tiktok" className="social">
+              <img
+                src="src/assets/icons/social/tiktok-logo-48.png"
+                alt="Tiktok"
+                className="w-5 h-auto"
+              />
+            </a>
+            <a href="#" aria-label="Instagram" className="social">
+              <img
+                src="src/assets/icons/social/instagram-logo-48.png"
+                alt="Instagram"
+                className="w-5 h-auto"
+              />
+            </a>
+            <a href="#" aria-label="Facebook" className="social">
+              <img
+                src="src/assets/icons/social/facebook-logo-48.png"
+                alt="Facebook"
+                className="w-5 h-auto"
+              />
+            </a>
+          </div>
+
+          {/* Secciones */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-12 items-start md:mt-4 px-4 md:px-8 md:py-10">
+            {/* Logo */}
+            <div className="flex flex-col items-center justify-center -space-y-2">
+              <img
+                src="Logo mordida.png"
+                alt="Logo"
+                className="w-20 h-auto object-contain"
+              />
+              <p className="font-bold text-yellow-400 text-center md:text-left text-lg">
+                Cactus
+              </p>
+            </div>
+
+            {/* Newsletter */}
+            <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-3 md:space-y-5">
+              <p className="text-gray-300 text-lg font-semibold">Newsletter</p>
+              <p className="text-gray-400 text-sm leading-relaxed max-w-md md:max-w-sm">
+                Consigue un{" "}
+                <span className="font-bold text-yellow-400">10% OFF</span> en
+                los productos suscribiéndote para enterarte de novedades y
+                promociones.
+              </p>
+              <div className="flex items-stretch border border-white rounded-lg overflow-hidden shadow-md">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  autoCapitalize="off"
+                  aria-label="Email"
+                  autoComplete="off"
+                  className="h-10 px-4 text-sm text-white bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 placeholder-gray-400 w-full"
+                />
+                <button className="px-6 bg-black text-white border-l border-white font-semibold text-sm hover:bg-yellow-500 hover:text-black transition-colors">
+                  Enviar
+                </button>
+              </div>
+            </div>
+
+            {/* Medios de Pago */}
+            <div className="flex flex-col items-center space-y-3 md:items-end md:space-y-5">
+              <p className="text-gray-300 text-lg font-semibold">
+                Medios de Pago
+              </p>
+              <div className="flex flex-wrap justify-center md:justify-start gap-2 md:gap-3">
+                <img
+                  src="src/assets/icons/payments/visa.svg"
+                  alt="Visa"
+                  className="w-8 h-auto md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/mastercard.svg"
+                  alt="Master Card"
+                  className="w-8 h-auto md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/maestro.svg"
+                  alt="Maestro"
+                  className="w-8 h-auto md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/american-express.svg"
+                  alt="American Express"
+                  className="w-8 h-auto md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/tarjeta-naranja.png"
+                  alt="Naranja X"
+                  className="w-8 h-auto object-contain md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/nativa.png"
+                  alt="Banco Nación"
+                  className="w-8 h-auto object-contain md:w-9"
+                />
+                <img
+                  src="src/assets/icons/payments/mercado-pago.svg"
+                  alt="Mercado Pago"
+                  className="w-8 h-auto md:w-9"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-gray-800 my-6"></div>
+
+          <div className="flex flex-col items-center text-center text-sm text-gray-400 px-4 space-y-4">
+            {/* Enlaces Rápidos */}
+            <nav className="flex flex-wrap justify-center items-center gap-2 md:gap-4 text-gray-400">
+              <a
+                href="#"
+                className="hover:text-yellow-400 text-xs leading-tight flex items-center gap-1"
+              >
+                Preguntas frecuentes
+              </a>
+              <span className="text-gray-500 hidden md:inline">|</span>
+              <a
+                href="#"
+                className="hover:text-yellow-400 text-xs leading-tight flex items-center gap-1"
+              >
+                Términos y Condiciones
+              </a>
+              <span className="text-gray-500 hidden md:inline">|</span>
+              <a
+                href="#"
+                className="hover:text-yellow-400 text-xs leading-tight flex items-center gap-1"
+              >
+                Política de Envíos
+              </a>
+              <span className="text-gray-500 hidden md:inline">|</span>
+              <a
+                href="#"
+                className="hover:text-yellow-400 text-xs leading-tight flex items-center gap-1"
+              >
+                Cambios y Devoluciones
+              </a>
+              <span className="text-gray-500 hidden md:inline">|</span>
+              <a
+                href="#"
+                className="hover:text-yellow-400 text-xs leading-tight flex items-center gap-1"
+              >
+                Contacto
+              </a>
+            </nav>
+            <p className="text-[0.9rem] text-gray-500">
+              &copy; 2025 #Cactus - Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
