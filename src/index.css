@@ -6,10 +6,6 @@
   width: 0px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* Background destacados*/
 .bg-destacados {
   background: linear-gradient(to bottom right, #e2e8f0, #cbd5e1, #facc15);

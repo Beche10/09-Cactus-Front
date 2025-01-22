@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,19 +9,21 @@ export const Navbar = () => {
   };
 
   const navLinks = [
-    { href: "#", label: "Inicio" },
-    { href: "#Productos", label: "Productos" },
-    { href: "#Destacados", label: "Destacados" },
-    { href: "#Contacto", label: "Contacto" },
+    { to: "Inicio", label: "Inicio" },
+    { to: "Productos", label: "Productos" },
+    { to: "Destacados", label: "Destacados" },
+    { to: "Contacto", label: "Contacto" },
   ];
 
   return (
     <nav className="bg-black text-white fixed top-0 w-full z-50 h-20">
       <div className="container mx-auto flex items-center justify-between py-4 px-4">
         {/* Logo */}
-        <a
-          href="#"
-          className="flex flex-col items-center text-base text-yellow-400 -space-y-1"
+        <Link
+          to="Inicio"
+          smooth={true}
+          duration={500}
+          className="flex flex-col items-center text-base text-yellow-400 cursor-pointer -space-y-1"
         >
           <img
             src="Logo mordida.png"
@@ -28,38 +31,38 @@ export const Navbar = () => {
             className="w-8 h-auto object-contain"
           />
           <p className="font-bold font-mono">Cactus</p>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-8 ml-8">
           {navLinks.map((item) => (
-            <a
-              href={item.href}
+            <Link
               key={item.label}
-              className="font-mono text-white hover:text-yellow-400"
+              to={item.to}
+              smooth={true}
+              duration={500}
+              spy={true}
+              offset={-20} // Ajusta según la altura del navbar
+              className="font-mono text-white hover:text-yellow-400 cursor-pointer"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* User and Cart Icons */}
         <div className="flex items-center justify-center space-x-5">
           {/* User Icon */}
-          <a href="#usuario" aria-label="Iniciar sesión" className="-m-1">
+          <Link to="usuario" className="-m-1 cursor-pointer">
             <img
               src="icons/navbar/bx-user.svg"
               alt="Usuario"
               className="w-6 h-6 ill-white invert"
             />
-          </a>
+          </Link>
 
           {/* Cart Icon */}
-          <a
-            href="#carrito"
-            aria-label="Carrito de compras"
-            className="relative ml-4"
-          >
+          <Link to="carrito" className="relative ml-4 cursor-pointer">
             <img
               src="icons/navbar/shopping-bag-inline.svg"
               alt="Carrito de compras"
@@ -68,7 +71,7 @@ export const Navbar = () => {
             <span className="absolute -top-2 left-4 bg-red-500 text-white text-xs font-bold rounded-full px-1">
               0
             </span>
-          </a>
+          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -78,9 +81,7 @@ export const Navbar = () => {
           >
             <img
               src={
-                toggle
-                  ? "icons/navbar/bx-x.svg" // Ícono de cruz para cerrar
-                  : "icons/navbar/bx-menu.svg" // Ícono de menú para abrir
+                toggle ? "icons/navbar/bx-x.svg" : "icons/navbar/bx-menu.svg"
               }
               alt={toggle ? "Cerrar menú" : "Abrir menú"}
               className="w-6 h-6"
@@ -98,14 +99,18 @@ export const Navbar = () => {
         }
       >
         {navLinks.map((item) => (
-          <a
-            href={item.href}
+          <Link
             key={item.label}
-            className="py-2 text-white hover:text-yellow-400"
+            to={item.to}
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-50} // Ajusta según la altura del navbar
+            className="py-2 text-white hover:text-yellow-400 cursor-pointer"
             onClick={() => setToggle(false)} // Cierra el menú al hacer clic
           >
             {item.label}
-          </a>
+          </Link>
         ))}
       </div>
     </nav>

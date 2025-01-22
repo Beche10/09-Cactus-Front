@@ -2,54 +2,57 @@ import React from "react";
 import { Navbar } from "./components/Navbar";
 import { MarqueeLogistic } from "./helpers/MarqueeLogistic";
 import { Destacados } from "./components/Destacados";
+import { Link, Element } from "react-scroll";
 
 export const App = () => {
   return (
     <div>
-      {/* MENU */}
-      <nav>
-        <Navbar />
-      </nav>
+      <Element name="Inicio">
+        {/* MENU */}
+        <nav>
+          <Navbar />
+        </nav>
 
-      {/* HERO */}
-      <header className="bg-black text-white mt-10">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-12 px-6">
-          {/* Sección de Texto */}
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Accesorios <span className="text-yellow-500">Premium</span> para
-              tu <span className="text-gray-400">iPhone</span>
-            </h1>
-            <p className="text-md mb-6">
-              Diseñados para proteger y mejorar tu experiencia. ¡Explora nuestra
-              colección hoy!
-            </p>
-            <a
-              href="#Productos"
-              className="flex items-center justify-center mx-auto bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-400 hover:scale-105 transition duration-500"
-              style={{ maxWidth: "fit-content" }}
-            >
-              <span>Explorar productos</span>
+        {/* HERO */}
+        <header className="bg-black text-white mt-10">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-12 px-6">
+            {/* Sección de Texto */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                Accesorios <span className="text-yellow-500">Premium</span> para
+                tu <span className="text-gray-400">iPhone</span>
+              </h1>
+              <p className="text-md mb-6">
+                Diseñados para proteger y mejorar tu experiencia. ¡Explora
+                nuestra colección hoy!
+              </p>
+              <Link
+                to="Productos"
+                className="flex items-center justify-center mx-auto bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-lg shadow hover:bg-yellow-400 hover:scale-105 transition duration-500"
+                style={{ maxWidth: "fit-content" }}
+              >
+                <span>Explorar productos</span>
+                <img
+                  src="icons/hero/bx-right-arrow-circle.svg"
+                  alt="Flecha"
+                  className="ml-2 w-4 h-4"
+                />
+              </Link>
+              <p className="text-center text-xs text-gray-400 mt-4">
+                Envío gratis en compras mayores a $50.000
+              </p>
+            </div>
+            {/* Sección de Imagen */}
+            <div>
               <img
-                src="icons/hero/bx-right-arrow-circle.svg"
-                alt="Flecha"
-                className="ml-2 w-4 h-4"
+                src="hero.jpg"
+                alt="Accesorios para iPhone"
+                className="rounded-lg shadow-lg"
               />
-            </a>
-            <p className="text-center text-xs text-gray-400 mt-4">
-              Envío gratis en compras mayores a $50.000
-            </p>
+            </div>
           </div>
-          {/* Sección de Imagen */}
-          <div>
-            <img
-              src="hero.jpg"
-              alt="Accesorios para iPhone"
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-        </div>
-      </header>
+        </header>
+      </Element>
 
       {/* LOGISTIC */}
       <section className="bg-yellow-400">
@@ -65,92 +68,102 @@ export const App = () => {
       </section>
 
       {/* DESTACADOS */}
-      <section id="Destacados" className="py-20 bg-destacados ">
-        <Destacados />
-      </section>
+      <Element name="Destacados">
+        <section className="py-20 bg-destacados ">
+          <Destacados />
+        </section>
+      </Element>
 
       {/* EXPLORAR */}
-      <section id="Productos" className="py-14 md:py-20 bg-gray-100">
-        <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
-          <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
-            {/* Auriculares */}
-            <div
-              className="col-span-2 md:col-span-1 md:row-span-3 bg-cover bg-center rounded-lg flex items-center justify-center h-[300px] sm:h-full hover:scale-105 transition duration-500"
-              style={{
-                backgroundImage: "url('category/Auriculares.jpg')",
-              }}
-            >
-              <p className="text-white text-xl sm:text-4xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
-                Auriculares
-              </p>
-            </div>
+      <Element name="Productos">
+        <section className="py-3 md:py-18 bg-gray-100">
+          <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
+            <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
+              {/* Auriculares */}
+              <div
+                className="col-span-2 md:col-span-1 md:row-span-3 bg-cover bg-center rounded-lg flex items-center justify-center h-[300px] sm:h-full hover:scale-105 transition duration-500"
+                style={{
+                  backgroundImage: "url('category/Auriculares.jpg')",
+                }}
+              >
+                <p className="text-white text-xl sm:text-4xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                  Auriculares
+                </p>
+              </div>
 
-            {/* Accesorios */}
-            <div
-              className="col-span-2 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center md:h-38 hover:scale-105 transition duration-500"
-              style={{
-                backgroundImage: "url('category/Accesorio1.jpg')",
-              }}
-            >
-              <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
-                Accesorios
-              </p>
-            </div>
+              {/* Accesorios */}
+              <div
+                className="col-span-2 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center md:h-38 hover:scale-105 transition duration-500"
+                style={{
+                  backgroundImage: "url('category/Accesorio1.jpg')",
+                }}
+              >
+                <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
+                  Accesorios
+                </p>
+              </div>
 
-            {/* Cables */}
-            <div
-              className="col-span-4 row-span-1 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center md:h-36 hover:scale-105 transition duration-500"
-              style={{
-                backgroundImage: "url('category/Cable2.jpg')",
-              }}
-            >
-              <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
-                Cables
-              </p>
-            </div>
+              {/* Cables */}
+              <div
+                className="col-span-4 row-span-1 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center md:h-36 hover:scale-105 transition duration-500"
+                style={{
+                  backgroundImage: "url('category/Cable2.jpg')",
+                }}
+              >
+                <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                  Cables
+                </p>
+              </div>
 
-            {/* Cases */}
-            <div
-              className="col-span-4 row-span-1 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center h-46 hover:scale-105 transition duration-500"
-              style={{
-                backgroundImage: "url('category/Case2.jpg')",
-              }}
-            >
-              <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
-                Cases
-              </p>
-            </div>
+              {/* Cases */}
+              <div
+                className="col-span-4 row-span-1 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center h-46 hover:scale-105 transition duration-500"
+                style={{
+                  backgroundImage: "url('category/Case2.jpg')",
+                }}
+              >
+                <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
+                  Cases
+                </p>
+              </div>
 
-            {/* Cargadores */}
-            <div
-              className="col-span-4 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center h-40 md:h-36 hover:scale-105 transition duration-500"
-              style={{
-                backgroundImage: "url('category/Charger4.jpg')",
-              }}
-            >
-              <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
-                Cargadores
-              </p>
+              {/* Cargadores */}
+              <div
+                className="col-span-4 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center h-40 md:h-36 hover:scale-105 transition duration-500"
+                style={{
+                  backgroundImage: "url('category/Charger4.jpg')",
+                }}
+              >
+                <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
+                  Cargadores
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Element>
 
       {/* SAVE OFF */}
-      <section id="Ofertas" className="bg-gray-300">
-        <div className="container mx-auto text-center px-4 py-10 mt-8">
-          <h2 className="text-3xl font-bold mb-4">Ofertas Exclusivas</h2>
-          <p className="text-lg mb-6">
-            Aprovecha nuestras promociones limitadas y consigue los mejores
-            precios.
-          </p>
-          <button className="bg-black text-white font-semibold px-7 py-3 rounded-lg shadow hover:bg-yellow-400 hover:text-black transition duration-500">
-            <a href="#productos">
-              <img src="icons/cards/eye.svg" alt="" className="filter invert" />
-            </a>
-          </button>
-        </div>
-      </section>
+      <Element name="Ofertas">
+        <section className="bg-gray-300">
+          <div className="container mx-auto text-center px-4 py-10 mt-8">
+            <h2 className="text-3xl font-bold mb-4">Ofertas Exclusivas</h2>
+            <p className="text-lg mb-6">
+              Aprovecha nuestras promociones limitadas y consigue los mejores
+              precios.
+            </p>
+            <button className="bg-black text-white font-semibold px-7 py-3 rounded-lg shadow hover:bg-yellow-400 hover:text-black transition duration-500">
+              <a href="#productos">
+                <img
+                  src="icons/cards/eye.svg"
+                  alt=""
+                  className="filter invert"
+                />
+              </a>
+            </button>
+          </div>
+        </section>
+      </Element>
 
       {/* FOOTER */}
       <footer className="bg-black text-white py-3 font-mono">
