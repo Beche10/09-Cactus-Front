@@ -65,19 +65,19 @@ export const App = () => {
       </section>
 
       {/* DESTACADOS */}
-      <section id="Destacados" className="py-10 md:py-20 bg-destacados ">
+      <section id="Destacados" className="py-20 bg-destacados ">
         <Destacados />
       </section>
 
       {/* EXPLORAR */}
-      <section id="Productos" className="py-10 md:py-20 bg-gray-100">
+      <section id="Productos" className="py-14 md:py-20 bg-gray-100">
         <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
           <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
             {/* Auriculares */}
             <div
               className="col-span-2 md:col-span-1 md:row-span-3 bg-cover bg-center rounded-lg flex items-center justify-center h-[300px] sm:h-full hover:scale-105 transition duration-500"
               style={{
-                backgroundImage: "url('src/img/category/Auriculares.jpg')",
+                backgroundImage: "url('category/Auriculares.jpg')",
               }}
             >
               <p className="text-white text-xl sm:text-4xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
@@ -89,7 +89,7 @@ export const App = () => {
             <div
               className="col-span-2 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center md:h-38 hover:scale-105 transition duration-500"
               style={{
-                backgroundImage: "url('src/img/category/Accesorio1.jpg')",
+                backgroundImage: "url('category/Accesorio1.jpg')",
               }}
             >
               <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
@@ -101,7 +101,7 @@ export const App = () => {
             <div
               className="col-span-4 row-span-1 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center md:h-36 hover:scale-105 transition duration-500"
               style={{
-                backgroundImage: "url('src/img/category/Cable2.jpg')",
+                backgroundImage: "url('category/Cable2.jpg')",
               }}
             >
               <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
@@ -113,7 +113,7 @@ export const App = () => {
             <div
               className="col-span-4 row-span-1 md:col-span-1 md:row-span-2 bg-cover bg-center rounded-lg flex items-center justify-center h-46 hover:scale-105 transition duration-500"
               style={{
-                backgroundImage: "url('src/img/category/Case2.jpg')",
+                backgroundImage: "url('category/Case2.jpg')",
               }}
             >
               <p className="text-black text-xl sm:text-2xl font-bold bg-white bg-opacity-70 px-4 py-2 rounded">
@@ -125,7 +125,7 @@ export const App = () => {
             <div
               className="col-span-4 md:col-span-1 bg-cover bg-center rounded-lg flex items-center justify-center h-40 md:h-36 hover:scale-105 transition duration-500"
               style={{
-                backgroundImage: "url('src/img/category/Charger4.jpg')",
+                backgroundImage: "url('category/Charger4.jpg')",
               }}
             >
               <p className="text-white text-xl sm:text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded">
@@ -230,37 +230,37 @@ export const App = () => {
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-2 md:gap-3">
                 <img
-                  src="src/assets/icons/payments/visa.svg"
+                  src="icons/payments/visa.svg"
                   alt="Visa"
                   className="w-8 h-auto md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/mastercard.svg"
+                  src="icons/payments/mastercard.svg"
                   alt="Master Card"
                   className="w-8 h-auto md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/maestro.svg"
+                  src="icons/payments/maestro.svg"
                   alt="Maestro"
                   className="w-8 h-auto md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/american-express.svg"
+                  src="icons/payments/american-express.svg"
                   alt="American Express"
                   className="w-8 h-auto md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/tarjeta-naranja.png"
+                  src="icons/payments/tarjeta-naranja.png"
                   alt="Naranja X"
                   className="w-8 h-auto object-contain md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/nativa.png"
+                  src="icons/payments/nativa.png"
                   alt="Banco Nación"
                   className="w-8 h-auto object-contain md:w-9"
                 />
                 <img
-                  src="src/assets/icons/payments/mercado-pago.svg"
+                  src="icons/payments/mercado-pago.svg"
                   alt="Mercado Pago"
                   className="w-8 h-auto md:w-9"
                 />
