@@ -153,7 +153,7 @@ export const App = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-2 font-mono">
+      <footer className="bg-black text-white py-3 font-mono">
         <div className="container mx-auto px-4">
           {/* Redes Sociales y Seguinos */}
           <div className="flex flex-wrap justify-end items-center gap-3 py-2">
@@ -184,7 +184,7 @@ export const App = () => {
           </div>
 
           {/* Secciones */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-12 items-start md:mt-4 px-4 md:px-8 md:py-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-20 items-center px-4 md:px-8 md:py-10">
             {/* Logo */}
             <div className="flex flex-col items-center justify-center -space-y-2">
               <img
@@ -198,7 +198,7 @@ export const App = () => {
             </div>
 
             {/* Newsletter */}
-            <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-3 md:space-y-5">
+            <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-3 md:space-y-7">
               <p className="text-gray-300 text-lg font-semibold">Newsletter</p>
               <p className="text-gray-400 text-sm leading-relaxed max-w-md md:max-w-sm">
                 Consigue un{" "}
@@ -224,7 +224,7 @@ export const App = () => {
             </div>
 
             {/* Medios de Pago */}
-            <div className="flex flex-col items-center space-y-3 md:items-end md:space-y-5">
+            <div className="flex flex-col items-center space-y-3 md:items-start md:space-y-4">
               <p className="text-gray-300 text-lg font-semibold">
                 Medios de Pago
               </p>
@@ -264,6 +264,16 @@ export const App = () => {
                   alt="Mercado Pago"
                   className="w-8 h-auto md:w-9"
                 />
+              </div>
+
+              {/* Información */}
+              <div className="hidden md:block">
+                <p className="text-gray-300 text-lg font-semibold mb-2">
+                  Información
+                </p>
+                <p>Catamarca, Capital - Argentina</p>
+                <p>Tel.: (383)-4373389</p>
+                <p>cactustecnologia@gmail.com</p>
               </div>
             </div>
           </div>
