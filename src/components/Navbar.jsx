@@ -23,6 +23,7 @@ export const Navbar = () => {
           to="Inicio"
           smooth={true}
           duration={500}
+          offset={-40}
           className="flex flex-col items-center text-base text-yellow-400 cursor-pointer -space-y-1"
         >
           <img
