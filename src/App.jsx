@@ -55,7 +55,7 @@ export const App = () => {
       <section className="bg-yellow-400">
         <marquee
           loop={0}
-          speed={20} // Reduce la velocidad para suavidad
+          speed={10} // Reduce la velocidad para suavidad
           gradient={false} // Elimina el gradiente
           easing="ease-in-out" // Animación más fluida
           pauseOnHover={true} // Pausa al pasar el mouse

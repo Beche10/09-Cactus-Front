@@ -44,13 +44,13 @@ export const Navbar = () => {
         </div>
 
         {/* User and Cart Icons */}
-        <div className="flex items-center space-x-5">
+        <div className="flex items-center justify-center space-x-5">
           {/* User Icon */}
           <a href="#usuario" aria-label="Iniciar sesión" className="-m-1">
             <img
-              src="icons/navbar/Person--Streamline-Bootstrap.svg"
+              src="icons/navbar/bx-user.svg"
               alt="Usuario"
-              className="w-6 h-6 filter invert"
+              className="w-6 h-6 ill-white invert"
             />
           </a>
 
@@ -63,7 +63,7 @@ export const Navbar = () => {
             <img
               src="icons/navbar/shopping-bag-inline.svg"
               alt="Carrito de compras"
-              className="w-5 h-5 filter invert"
+              className="w-5 h-5 fill-white invert"
             />
             <span className="absolute -top-2 left-4 bg-red-500 text-white text-xs font-bold rounded-full px-1">
               0
