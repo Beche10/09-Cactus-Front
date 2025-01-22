@@ -6,7 +6,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 1: 3 Cuotas sin interés */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-credit-card.svg"
+          src="icons/logistic/bxs-credit-card.svg"
           alt="Ícono de tarjeta de crédito"
           className="w-6 h-6"
         />
@@ -16,7 +16,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 2: Envío gratis */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-truck.svg"
+          src="icons/logistic/bxs-truck.svg"
           alt="Ícono de camión"
           className="w-6 h-6"
         />
@@ -28,7 +28,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 3: Descuento por transferencia */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/Payments.svg"
+          src="icons/logistic/Payments.svg"
           alt="Ícono de transferencia bancaria"
           className="w-6 h-6"
         />
@@ -40,7 +40,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 1: 3 Cuotas sin interés */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-credit-card.svg"
+          src="icons/logistic/bxs-credit-card.svg"
           alt="Ícono de tarjeta de crédito"
           className="w-6 h-6"
         />
@@ -50,7 +50,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 2: Envío gratis */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-truck.svg"
+          src="icons/logistic/bxs-truck.svg"
           alt="Ícono de camión"
           className="w-6 h-6"
         />
@@ -62,7 +62,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 3: Descuento por transferencia */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/Payments.svg"
+          src="icons/logistic/Payments.svg"
           alt="Ícono de transferencia bancaria"
           className="w-6 h-6"
         />
@@ -74,7 +74,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 1: 3 Cuotas sin interés */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-credit-card.svg"
+          src="icons/logistic/bxs-credit-card.svg"
           alt="Ícono de tarjeta de crédito"
           className="w-6 h-6"
         />
@@ -84,7 +84,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 2: Envío gratis */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-truck.svg"
+          src="icons/logistic/bxs-truck.svg"
           alt="Ícono de camión"
           className="w-6 h-6"
         />
@@ -96,7 +96,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 3: Descuento por transferencia */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/Payments.svg"
+          src="icons/logistic/Payments.svg"
           alt="Ícono de transferencia bancaria"
           className="w-6 h-6"
         />
@@ -108,7 +108,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 1: 3 Cuotas sin interés */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-credit-card.svg"
+          src="icons/logistic/bxs-credit-card.svg"
           alt="Ícono de tarjeta de crédito"
           className="w-6 h-6"
         />
@@ -118,7 +118,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 2: Envío gratis */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/bxs-truck.svg"
+          src="icons/logistic/bxs-truck.svg"
           alt="Ícono de camión"
           className="w-6 h-6"
         />
@@ -130,7 +130,7 @@ export const MarqueeLogistic = () => {
       {/* Opción 3: Descuento por transferencia */}
       <div className="flex flex-row items-center gap-3 text-center p-2 flex-shrink-0">
         <img
-          src="src/assets/icons/logistic/Payments.svg"
+          src="icons/logistic/Payments.svg"
           alt="Ícono de transferencia bancaria"
           className="w-6 h-6"
         />

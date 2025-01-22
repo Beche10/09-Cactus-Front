@@ -17,21 +17,13 @@ export const Cards = ({
     const halfStar = stars % 1 !== 0;
     const totalStars = [...Array(5)].map((_, i) => {
       if (i < fullStars)
-        return <img key={i} src="src/assets/icons/cards/star.svg" alt="star" />;
+        return <img key={i} src="icons/cards/star.svg" alt="star" />;
       if (i === fullStars && halfStar)
         return (
-          <img
-            key={i}
-            src="src/assets/icons/cards/star-half-fill.svg"
-            alt="star-half"
-          />
+          <img key={i} src="icons/cards/star-half-fill.svg" alt="star-half" />
         );
       return (
-        <img
-          key={i}
-          src="src/assets/icons/cards/star-outline.svg"
-          alt="star-outline"
-        />
+        <img key={i} src="icons/cards/star-outline.svg" alt="star-outline" />
       );
     });
     return totalStars;
@@ -102,14 +94,14 @@ export const Cards = ({
           <button className="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
             <img
               className="opacity-50"
-              src="src/assets/icons/cards/love.svg"
+              src="icons/cards/love.svg"
               alt="wishlist"
             />
           </button>
           <button className="flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md">
             <img
               className="opacity-50"
-              src="src/assets/icons/cards/eye.svg"
+              src="icons/cards/eye.svg"
               alt="details"
             />
           </button>

@@ -44,7 +44,7 @@ export const Destacados = () => {
           <SwiperSlide className="w-[300px]">
             <Cards
               className="shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-105"
-              imageSrc="src/img/products/airpods.jpg"
+              imageSrc="products/airpods.jpg"
               imageAlt="Airpods Pro 2da Gen."
               title="Airpods Pro 2da Gen."
               price="$53,590.00"
@@ -63,7 +63,7 @@ export const Destacados = () => {
           <SwiperSlide className="w-[300px]">
             <Cards
               className="shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-105"
-              imageSrc="src/img/products/cargador-rapido.jpg"
+              imageSrc="products/cargador-rapido.jpg"
               imageAlt="Cargador Rápido"
               title="Cargador Rápido"
               price="$33,590.00"
@@ -82,7 +82,7 @@ export const Destacados = () => {
           <SwiperSlide className="w-[300px]">
             <Cards
               className="shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-105"
-              imageSrc="src/img/products/funda-premium2.jpg"
+              imageSrc="products/funda-premium2.jpg"
               imageAlt="Funda Premium Magnetic"
               title="Funda Premium Magnetic"
               price="$15,590.00"

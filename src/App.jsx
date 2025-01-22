@@ -31,7 +31,7 @@ export const App = () => {
             >
               <span>Explorar productos</span>
               <img
-                src="src/assets/icons/hero/bx-right-arrow-circle.svg"
+                src="icons/hero/bx-right-arrow-circle.svg"
                 alt="Flecha"
                 className="ml-2 w-4 h-4"
               />
@@ -43,7 +43,7 @@ export const App = () => {
           {/* Sección de Imagen */}
           <div>
             <img
-              src="src/img/hero.jpg"
+              src="hero.jpg"
               alt="Accesorios para iPhone"
               className="rounded-lg shadow-lg"
             />
@@ -146,11 +146,7 @@ export const App = () => {
           </p>
           <button className="bg-black text-white font-semibold px-7 py-3 rounded-lg shadow hover:bg-yellow-400 hover:text-black transition duration-500">
             <a href="#productos">
-              <img
-                src="src/assets/icons/cards/eye.svg"
-                alt=""
-                className="filter invert"
-              />
+              <img src="icons/cards/eye.svg" alt="" className="filter invert" />
             </a>
           </button>
         </div>
@@ -166,21 +162,21 @@ export const App = () => {
             </p>
             <a href="#" aria-label="Tiktok" className="social">
               <img
-                src="src/assets/icons/social/tiktok-logo-48.png"
+                src="icons/social/tiktok-logo-48.png"
                 alt="Tiktok"
                 className="w-5 h-auto"
               />
             </a>
             <a href="#" aria-label="Instagram" className="social">
               <img
-                src="src/assets/icons/social/instagram-logo-48.png"
+                src="icons/social/instagram-logo-48.png"
                 alt="Instagram"
                 className="w-5 h-auto"
               />
             </a>
             <a href="#" aria-label="Facebook" className="social">
               <img
-                src="src/assets/icons/social/facebook-logo-48.png"
+                src="icons/social/facebook-logo-48.png"
                 alt="Facebook"
                 className="w-5 h-auto"
               />

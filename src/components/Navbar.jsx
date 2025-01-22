@@ -48,7 +48,7 @@ export const Navbar = () => {
           {/* User Icon */}
           <a href="#usuario" aria-label="Iniciar sesión" className="-m-1">
             <img
-              src="src/assets/icons/navbar/Person--Streamline-Bootstrap.svg"
+              src="icons/navbar/Person--Streamline-Bootstrap.svg"
               alt="Usuario"
               className="w-6 h-6 filter invert"
             />
@@ -61,7 +61,7 @@ export const Navbar = () => {
             className="relative ml-4"
           >
             <img
-              src="src/assets/icons/navbar/shopping-bag-inline.svg"
+              src="icons/navbar/shopping-bag-inline.svg"
               alt="Carrito de compras"
               className="w-5 h-5 filter invert"
             />
@@ -79,8 +79,8 @@ export const Navbar = () => {
             <img
               src={
                 toggle
-                  ? "src/assets/icons/navbar/bx-x.svg" // Ícono de cruz para cerrar
-                  : "src/assets/icons/navbar/bx-menu.svg" // Ícono de menú para abrir
+                  ? "icons/navbar/bx-x.svg" // Ícono de cruz para cerrar
+                  : "icons/navbar/bx-menu.svg" // Ícono de menú para abrir
               }
               alt={toggle ? "Cerrar menú" : "Abrir menú"}
               className="w-6 h-6"
