@@ -186,24 +186,27 @@ export const App = () => {
               Seguinos en nuestras redes:
             </p>
             <a href="#" aria-label="Tiktok" className="social">
-              <img
+              <LazyLoadImage
                 src="icons/social/tiktok-logo-48.png"
                 alt="Tiktok"
                 className="w-5 h-auto"
+                effect="blur"
               />
             </a>
             <a href="#" aria-label="Instagram" className="social">
-              <img
+              <LazyLoadImage
                 src="icons/social/instagram-logo-48.png"
                 alt="Instagram"
                 className="w-5 h-auto"
+                effect="blur"
               />
             </a>
             <a href="#" aria-label="Facebook" className="social">
-              <img
+              <LazyLoadImage
                 src="icons/social/facebook-logo-48.png"
                 alt="Facebook"
                 className="w-5 h-auto"
+                effect="blur"
               />
             </a>
           </div>
@@ -212,10 +215,11 @@ export const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-20 items-center px-4 md:px-8 md:py-10">
             {/* Logo */}
             <div className="flex flex-col items-center justify-center -space-y-2">
-              <img
+              <LazyLoadImage
                 src="Logo mordida.png"
                 alt="Logo"
                 className="w-20 h-auto object-contain"
+                effect="blur"
               />
               <p className="font-bold text-yellow-400 text-center md:text-left text-lg">
                 Cactus
@@ -254,40 +258,47 @@ export const App = () => {
                 Medios de Pago
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-2 md:gap-3">
-                <img
+                <LazyLoadImage
                   src="icons/payments/visa.svg"
                   alt="Visa"
                   className="w-8 h-auto md:w-9"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/mastercard.svg"
                   alt="Master Card"
                   className="w-8 h-auto md:w-9"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/maestro.svg"
                   alt="Maestro"
                   className="w-8 h-auto md:w-9"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/american-express.svg"
                   alt="American Express"
                   className="w-8 h-auto md:w-9"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/tarjeta-naranja.png"
                   alt="Naranja X"
-                  className="w-8 h-auto object-contain md:w-9"
+                  className="w-8 h-8 md:w-9 md:h-9 object-contain"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/nativa.png"
                   alt="Banco Nación"
-                  className="w-8 h-auto object-contain md:w-9"
+                  className="w-8 h-8 md:w-9 md:h-9 object-contain"
+                  effect="blur"
                 />
-                <img
+                <LazyLoadImage
                   src="icons/payments/mercado-pago.svg"
                   alt="Mercado Pago"
                   className="w-8 h-auto md:w-9"
+                  effect="blur"
                 />
               </div>
 
