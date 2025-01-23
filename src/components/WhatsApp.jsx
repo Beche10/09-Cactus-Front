@@ -13,6 +13,7 @@ export const WhatsApp = () => {
       notification={true} // Muestra notificaciones de mensajes no leídos
       notificationSound={true} // Habilita el sonido para las notificaciones
       placeholder="Escribe tu mensaje aquí..." // Placeholder del input
+      darkMode={true}
       className="floating-whatsapp-button"
     />
   );
