@@ -43,7 +43,7 @@ export const Navbar = () => {
               smooth={true}
               duration={500}
               spy={true}
-              offset={-20} // Ajusta según la altura del navbar
+              offset={-40} // Ajusta según la altura del navbar
               className="font-mono text-white hover:text-yellow-400 cursor-pointer"
             >
               {item.label}
