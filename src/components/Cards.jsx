@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css"; // Estilo para el efecto de carga diferida
 
 export const Cards = ({
   imageSrc,
@@ -31,12 +33,13 @@ export const Cards = ({
 
   return (
     <div className="bg-white text-gray-700 w-full max-w-[300px] max-h-[500px] shadow-lg rounded-md overflow-hidden">
-      {/* Imagen */}
+      {/* Imagen con LazyLoad */}
       <div className="w-[150px] h-[150px] flex items-center justify-center bg-gray-100 mx-auto">
-        <img
+        <LazyLoadImage
           className="max-w-full max-h-full object-contain"
           src={imageSrc}
           alt={imageAlt}
+          effect="blur" // Efecto de carga diferida
         />
       </div>
       {/* Contenido */}

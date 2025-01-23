@@ -4,6 +4,8 @@ import { MarqueeLogistic } from "./helpers/MarqueeLogistic";
 import { Destacados } from "./components/Destacados";
 import { Link, Element } from "react-scroll";
 import { WhatsApp } from "./components/WhatsApp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export const App = () => {
   return (
@@ -40,10 +42,11 @@ export const App = () => {
                 style={{ maxWidth: "fit-content" }}
               >
                 <span>Explorar productos</span>
-                <img
+                <LazyLoadImage
                   src="icons/hero/bx-right-arrow-circle.svg"
                   alt="Flecha"
                   className="ml-2 w-4 h-4"
+                  effect="blur"
                 />
               </Link>
               <p className="text-center text-xs text-gray-400 mt-4">
@@ -52,10 +55,11 @@ export const App = () => {
             </div>
             {/* Sección de Imagen */}
             <div>
-              <img
+              <LazyLoadImage
                 src="hero.jpg"
                 alt="Accesorios para iPhone"
                 className="rounded-lg shadow-lg"
+                effect="blur"
               />
             </div>
           </div>
