@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Quitar barra de scroll de Navegador */
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -27,4 +28,12 @@
 .social:hover {
   transform: scale(1.1); /* Agranda ligeramente al pasar el mouse */
   background-color: #facc15; /* Cambia el color de fondo al amarillo */
+}
+
+/* WhatsApp Floating */
+.floating-whatsapp-button {
+  width: 40px !important; /* Cambia el tamaño del contenedor */
+  height: 40px !important;
+  bottom: 20px; /* Ajusta la posición si es necesario */
+  right: 50px;
 }

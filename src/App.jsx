@@ -3,10 +3,15 @@ import { Navbar } from "./components/Navbar";
 import { MarqueeLogistic } from "./helpers/MarqueeLogistic";
 import { Destacados } from "./components/Destacados";
 import { Link, Element } from "react-scroll";
+import { WhatsApp } from "./components/WhatsApp";
 
 export const App = () => {
   return (
     <div>
+      <div>
+        <WhatsApp />
+      </div>
+
       <Element name="Inicio">
         {/* MENU */}
         <nav>
