@@ -76,7 +76,7 @@ export const App = () => {
 
       {/* EXPLORAR */}
       <Element name="Productos">
-        <section className="py-3 md:py-18 bg-gray-100">
+        <section className="py-3 md:py-20 bg-gray-100">
           <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
             <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
               {/* Auriculares */}
