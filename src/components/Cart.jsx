@@ -15,9 +15,10 @@ export const Cart = () => {
         src="icons/navbar/shopping-bag-inline.svg"
         alt="Carrito de compras"
         className="w-5 h-5 fill-white invert"
+       
       />
       {cartCount >= 0 && (
-        <span className="absolute -top-2 left-4 bg-red-500 text-white text-xs font-bold rounded-full px-1">
+        <span className="absolute -top-3 left-3 bg-red-500 text-white text-xs font-bold rounded-full px-1">
           {cartCount}
         </span>
       )}

@@ -53,19 +53,19 @@ export const Navbar = () => {
         </div>
 
         {/* User and Cart Icons */}
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center gap-4">
           {/* User Icon */}
           <Link to="usuario" className="-m-1 cursor-pointer">
             <img
               src="icons/navbar/bx-user.svg"
               alt="Usuario"
-              className="w-6 h-6 fill-white invert"
+              className="w-6 h-6 invert"
             />
           </Link>
 
           {/* Cart Icon */}
-          <Link to="carrito" className="relative ml-4 cursor-pointer" >
-            <Cart/>
+          <Link to="carrito" className="relative cursor-pointer">
+            <Cart />
           </Link>
 
           {/* Mobile Menu Button */}
