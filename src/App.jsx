@@ -21,7 +21,7 @@ export const App = () => {
         </nav>
 
         {/* HERO */}
-        <header className="bg-black text-white mt-10">
+        <header className="bg-black text-white py-5">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-12 px-6">
             {/* Sección de Texto */}
             <div className="text-center md:text-left">
