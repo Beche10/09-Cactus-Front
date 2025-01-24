@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export const Cart = () => {
   const [cartCount, setCartCount] = useState(-1); // Cantidad de artículos
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Visibilidad del desplegable
+  const dropdownRef = useRef(null); // Referencia al contenedor del desplegable
+
+  // Cierra el desplegable si se hace clic fuera del componente
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, []);
 
   // Función para alternar el desplegable y actualizar el estado del carrito
   const toggleDropdown = () => {
@@ -15,7 +28,7 @@ export const Cart = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
       {/* Icono del carrito */}
       <div onClick={toggleDropdown} className="cursor-pointer">
         <img
@@ -32,7 +45,7 @@ export const Cart = () => {
 
       {/* Desplegable */}
       {isDropdownOpen && (
-        <div className="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-lg z-10">
+        <div className="absolute right-0 mt-4 md:mt-5 w-52 bg-white rounded-lg shadow-lg z-10">
           <div className="p-8 text-sm text-black text-center font-mono">
             {cartCount === 0
               ? "Carrito vacío"

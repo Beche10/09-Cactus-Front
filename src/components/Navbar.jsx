@@ -57,7 +57,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-center gap-5">
           {/* User Icon */}
           <Link to="usuario" className="-m-1 cursor-pointer">
-            < User />
+            <User />
           </Link>
 
           {/* Cart Icon */}
