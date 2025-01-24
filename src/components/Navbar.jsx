@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Cart } from "./Cart";
+import { User } from "./User";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -53,14 +54,10 @@ export const Navbar = () => {
         </div>
 
         {/* User and Cart Icons */}
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-5">
           {/* User Icon */}
           <Link to="usuario" className="-m-1 cursor-pointer">
-            <img
-              src="icons/navbar/bx-user.svg"
-              alt="Usuario"
-              className="w-6 h-6 invert"
-            />
+            < User />
           </Link>
 
           {/* Cart Icon */}
