@@ -18,7 +18,7 @@ export const Cart = () => {
        
       />
       {cartCount >= 0 && (
-        <span className="absolute -top-3 left-3 bg-red-500 text-white text-xs font-bold rounded-full px-1">
+        <span className="absolute -top-3 left-3 md:left-4 bg-red-500 text-white text-xs font-bold rounded-full px-1">
           {cartCount}
         </span>
       )}
