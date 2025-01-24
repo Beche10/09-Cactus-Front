@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { Cart } from "./Cart";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -58,20 +59,13 @@ export const Navbar = () => {
             <img
               src="icons/navbar/bx-user.svg"
               alt="Usuario"
-              className="w-6 h-6 ill-white invert"
+              className="w-6 h-6 fill-white invert"
             />
           </Link>
 
           {/* Cart Icon */}
-          <Link to="carrito" className="relative ml-4 cursor-pointer">
-            <img
-              src="icons/navbar/shopping-bag-inline.svg"
-              alt="Carrito de compras"
-              className="w-5 h-5 fill-white invert"
-            />
-            <span className="absolute -top-2 left-4 bg-red-500 text-white text-xs font-bold rounded-full px-1">
-              0
-            </span>
+          <Link to="carrito" className="relative ml-4 cursor-pointer" >
+            <Cart/>
           </Link>
 
           {/* Mobile Menu Button */}
