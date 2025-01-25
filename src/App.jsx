@@ -81,14 +81,14 @@ export const App = () => {
 
       {/* DESTACADOS */}
       <Element name="Destacados">
-        <section className="py-10  md:py-20 bg-destacados ">
+        <section className="py-16 md:py-20 bg-destacados ">
           <Destacados />
         </section>
       </Element>
 
       {/* EXPLORAR */}
       <Element name="Productos">
-        <section className="pt-3 md:pt-10 bg-gray-100">
+        <section className="pt-6 md:pt-12 bg-gray-100">
           <div className="container mx-auto py-8 px-4 flex flex-col justify-center">
             <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
               {/* Auriculares */}
