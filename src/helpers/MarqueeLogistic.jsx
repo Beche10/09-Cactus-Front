@@ -1,10 +1,11 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 export const MarqueeLogistic = () => {
   return (
-    <marquee
+    <Marquee
       loop={0}
-      speed={5} // Reduce la velocidad para suavidad
+      speed={30} // Reduce la velocidad para suavidad
       gradient={false} // Elimina el gradiente
       easing="ease-in-out" // Animación más fluida
       pauseOnHover={true} // Pausa al pasar el mouse
@@ -79,7 +80,7 @@ export const MarqueeLogistic = () => {
           </p>
         </div>
       </div>
-    </marquee>
+    </Marquee>
   );
 };
 
