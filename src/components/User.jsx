@@ -34,7 +34,7 @@ export const User = () => {
 
       {/* Desplegable */}
       {isDropdownOpen && (
-        <div className="absolute right-0 mt-5 w-52 bg-white rounded-lg shadow-lg z-10">
+        <div className="absolute right-0 mt-5 w-48 h-20 bg-white rounded-lg shadow-lg z-10">
           <ul className="p-4 text-sm text-black font-mono">
             <li className="hover:text-yellow-400 cursor-pointer">
               <a href="/login">Iniciar sesión</a>

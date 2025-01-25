@@ -3,7 +3,6 @@ import { Cards } from "./Cards";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -25,11 +24,19 @@ export const Destacados = () => {
           slidesPerView="auto"
           loop={true}
           coverflowEffect={{
-            rotate: 30,
-            stretch: 0,
-            depth: 200,
+            rotate: -10,
+            stretch: 70,
+            depth: 150,
             modifier: 1,
             slideShadows: false,
+          }}
+          breakpoints={{
+            700: {
+              // A partir de 768px (md), mostrar 3 slides
+              slidesPerView: 3,
+              centeredSlides: false, // Mantener la distribución uniforme
+              spaceBetween: 30, // Espaciado uniforme entre cards
+            },
           }}
           pagination={{
             clickable: true,
@@ -88,6 +95,25 @@ export const Destacados = () => {
               title="Funda Premium Magnetic"
               price="$15,590.00"
               originalPrice="$18,550.00"
+              discount="save 20%"
+              badges={["Stock ready", "Official store"]}
+              reviews={{
+                stars: 4.5,
+                count: "20k reviews",
+              }}
+              onBuyClick={() => console.log("Comprar Funda")}
+            />
+          </SwiperSlide>
+
+          {/* Slide 4 */}
+          <SwiperSlide className="w-[300px]">
+            <Cards
+              className="shadow-lg rounded-xl transform transition-transform duration-300 hover:scale-105"
+              imageSrc="products/soporte.jpg"
+              imageAlt="Soporte MagSafe"
+              title="Soporte p/ MagSafe"
+              price="$17,590.00"
+              originalPrice="$22,550.00"
               discount="save 20%"
               badges={["Stock ready", "Official store"]}
               reviews={{

@@ -81,7 +81,7 @@ export const App = () => {
 
       {/* DESTACADOS */}
       <Element name="Destacados">
-        <section className="py-20 bg-destacados ">
+        <section className="py-10  md:py-20 bg-destacados ">
           <Destacados />
         </section>
       </Element>
