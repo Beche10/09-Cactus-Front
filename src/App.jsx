@@ -196,7 +196,7 @@ export const App = () => {
 
             {/* Newsletter */}
             <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-3 md:space-y-7">
-              <p className="text-gray-300 text-md font-semibold">Newsletter</p>
+              <p className="text-gray-300 text-lg font-semibold">Newsletter</p>
               <p className="text-gray-400 text-sm leading-relaxed max-w-md md:max-w-sm">
                 Consigue un{" "}
                 <span className="font-bold text-yellow-400">10% OFF</span> en
