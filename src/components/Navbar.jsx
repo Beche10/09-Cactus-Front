@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { Cart } from "./Cart";
 import { User } from "./User";
+import { MenuButton } from "./MenuButton";
 
 export const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -66,44 +67,8 @@ export const Navbar = () => {
           </Link>
 
           {/* Mobile Menu Button */}
-          <button
-            aria-label={toggle ? "Cerrar menú" : "Abrir menú"}
-            className="md:hidden bg-yellow-400 rounded p-1 focus:outline-none hover:bg-yellow-300"
-            onClick={handleToggle}
-          >
-            <img
-              src={
-                toggle ? "icons/navbar/bx-x.svg" : "icons/navbar/bx-menu.svg"
-              }
-              alt={toggle ? "Cerrar menú" : "Abrir menú"}
-              className="w-6 h-6"
-            />
-          </button>
+          <MenuButton navLinks={navLinks} />
         </div>
-      </div>
-
-      {/* Mobile Navigation Links */}
-      <div
-        className={
-          toggle
-            ? "flex flex-col items-center font-mono bg-black w-full absolute top-20 left-0 right-0 z-50 py-4"
-            : "hidden"
-        }
-      >
-        {navLinks.map((item) => (
-          <Link
-            key={item.label}
-            to={item.to}
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={-50} // Ajusta según la altura del navbar
-            className="py-2 text-white hover:text-yellow-400 cursor-pointer"
-            onClick={() => setToggle(false)} // Cierra el menú al hacer clic
-          >
-            {item.label}
-          </Link>
-        ))}
       </div>
     </nav>
   );
